@@ -23,6 +23,7 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <15 29 42 43 30 16 17 31 44 45 32 18 19 33 46 5 4 3 2 1 0 14 28 41 53 54 55 56 57 58 59 60 52 40 27 13 12 11 10 9 8 7 6>;
         };
+
         hml: hml {
             compatible = "zmk,behavior-hold-tap";
             label = "HML";
@@ -90,11 +91,11 @@
 
         EXTRA {
             bindings = <
-&kp GRAVE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6          &kp F7          &kp F8        &kp F9     &kp F10     &kp F11       &kp F12       &trans
-&trans     &trans  &trans  &trans  &trans  &trans  &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END    &trans      &trans        &trans        &kp DEL
-&trans     &trans  &trans  &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans      &trans                      &trans
-&trans     &trans  &trans  &trans  &trans  &trans  &to 1           &to 0           &to 2         &to 3      &trans                                  &trans
-&trans     &trans          &trans                  &trans                                                   &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2
+&kp GRAVE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7    &kp F8         &kp F9        &kp F10     &kp F11       &kp F12       &trans
+&trans     &trans  &trans  &trans  &trans  &trans  &trans  &kp HOME  &kp PAGE_DOWN  &kp PG_UP     &kp END     &trans        &trans        &kp DEL
+&trans     &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT   &trans                      &trans
+&trans     &trans  &trans  &trans  &trans  &trans  &to 1   &to 0     &to 2          &to 3         &trans                                  &trans
+&trans     &trans          &trans                  &trans                                         &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2
             >;
         };
     };
